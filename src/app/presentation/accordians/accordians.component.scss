@@ -1,0 +1,31 @@
+.accordians__group {
+    flex: 1;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid 1px solid #f7f7f7;;
+    padding: 0.8rem;
+    position: relative;
+}
+
+.accordians__groups {
+ display: flex;
+ position: relative;
+}
+
+// Show offset fixing to parents
+.accordians__header {
+    height: 5rem;
+    position: fixed;
+    border-bottom: 1px solid #d1d1d1;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    padding-left: 2rem;
+}
+
+.accordians {
+    padding-top: 5.8rem;
+
+}

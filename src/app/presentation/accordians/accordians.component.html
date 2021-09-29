@@ -1,0 +1,10 @@
+<div class="accordians">
+    <div class="accordians__header">
+        <h1>{{accordianGroup.heading}}</h1>
+    </div>
+    <div class="accordians__groups">
+        <div class="accordians__group" *ngFor="let accordians of accordianGroup.groups">
+            <app-accordian [accordians]="accordians"></app-accordian>
+        </div>
+    </div> 
+</div>

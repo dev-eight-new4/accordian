@@ -1,0 +1,26 @@
+<div class="accordian-component">
+  <ul #accordiansElement class="accordians">
+    <li #accordianElement
+        class="accordian" 
+        *ngFor="let accordian of accordians; let i = index"
+        [ngClass]="{
+          'accordian--open': accordian.open, 
+          'accordian--sticky': accordian.sticky
+        }"
+        [attr.data-reference]="accordian.reference"
+        [attr.aria-expanded]="accordian.open">
+      <h3 class="accordian__heading"
+          tabindex="1"
+          (click)="toggle(accordian, accordianElement)"
+          (keydown.enter)="toggle(accordian, accordianElement)">
+        <span class="accordian__heading__title">{{ accordian.heading }}</span>
+      </h3>
+      <div class="accordian__content">
+        <app-article [article]="accordian.content"></app-article>
+        <!-- <div class="accordian__content__item" [innerHTML]="accordian.content | sanitizeHtml"></div> -->
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- TODO: Set aria.controls attributes and ID -->

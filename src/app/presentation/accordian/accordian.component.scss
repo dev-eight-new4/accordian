@@ -1,0 +1,103 @@
+.accordians {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid darken(#d1d1d1, 5%);
+}
+
+.accordian {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.accordian {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.accordian__heading {
+    color: blue;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0.8rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 2rem;
+    user-select: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.accordian  .accordian__heading:after {
+    position: absolute;
+    content: "\005E";
+    right: 1rem;
+    top: 1rem;
+}
+
+.accordian.accordian--open .accordian__heading:after {
+    transform: scaleY(-1);
+    bottom: 1rem;
+    top: unset;
+    transition: transform 0.2s ease-out;
+}
+
+.accordian.accordian--sticky .accordian__heading:after {
+    transition: transform 0.4s ease-in;
+}
+
+.accordian__heading__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-right: 3rem;
+}
+
+// Basic on/off
+// .accordian__content {
+//     display: none;
+//     padding: 0.8rem;
+// }
+
+// .accordian.accordian--open .accordian__content {
+//     display: block;
+// }
+
+.accordian__content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.6s ease-out;
+}
+
+.accordian__content__item {
+    padding: 0.8rem;
+}
+
+.accordian.accordian--open .accordian__content {
+    max-height: 50rem;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.8s ease-out;;
+}
+
+.accordian.accordian--sticky .accordian__heading {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+// .accordian.accordian--sticky .accordian__content {
+//     overflow: auto;
+//     max-height: calc(100vw - 30px);
+// }
