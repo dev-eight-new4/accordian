@@ -45,6 +45,7 @@ Data > Service > Controller > Presentation
 - Using the window as the viewport/Scroll will effect the position of other Accordion Groups position - `IntersectionObservable` or `@Host()` Scroll listeners to `@ViewChildren()` instead
 - Run out of time to demo an E2E test
 - (Refactor for reuse and upgrage to IntersectionObserver use) Scroll Behaviour is candidate for a Directive - made a start here separating 'sticky' behaviour out of the component [sticky...ts](https://github.com/dev-eight-new4/accordian/blob/main/src/app/presentation/accordian/accordian.component.sticky.ts)
+- (bug) Content cut off : Animations set via an arbitrary 'max-height' - not good if content is larger. Should determine and set this programatically 
 
 ## Thanks
 
