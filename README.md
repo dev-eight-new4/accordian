@@ -47,6 +47,10 @@ Data > Service > Controller > Presentation
 - (Refactor for reuse and upgrage to IntersectionObserver use) Scroll Behaviour is candidate for a Directive - made a start here separating 'sticky' behaviour out of the component [sticky...ts](https://github.com/dev-eight-new4/accordian/blob/main/src/app/presentation/accordian/accordian.component.sticky.ts)
 - (bug) Content cut off : Animations set via an arbitrary 'max-height' - not good if content is larger. Should determine and set this programatically 
 
+## UX TODO
+- Match Caret given in the Designs
+- Match Font given in the Designs
+
 ## Thanks
 
 Thanks for the tech test, was fun, especially around the handling of;
