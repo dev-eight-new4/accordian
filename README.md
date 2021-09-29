@@ -19,7 +19,7 @@ Data > Service > Controller > Presentation
 
 ### Accordian Data
 
-```json
+```
 [ 
  {
   open: boolean, // is the accordian content open initially
