@@ -7,7 +7,7 @@
 ## Develop
 
 
-[Angular CLI](https://github.com/angular/angular-cli) version 12.2.7
+[Angular CLI](https://github.com/angular/angular-cli) version 12.2.7 ( will port to 10 )
 
 ## Setup
 
